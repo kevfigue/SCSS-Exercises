@@ -1,0 +1,112 @@
+// exercise 1
+@mixin btn($fontSize, $btnWidth, $bkgColour, $btnName){
+    .btn-#{$btnName}{
+        font-size: $fontSize;
+        width: $btnWidth;
+        background-color: $bkgColour;
+        border-radius: 15px;
+    }
+}
+@include btn(120%, 100px, red, "important");
+
+// exercise 2
+$percentageList: 100% 110% 120% 130% 140%;
+@mixin levelHeadingSpecial($index){
+    .heading#{$index} {
+        $index_val: $index - 5;
+        font-size: nth($percentageList, $index_val);
+}
+}
+
+$heading6: 6;
+$heading7: 7;
+$heading8: 8;
+$heading9: 9;
+$heading10: 10;
+
+@include levelHeadingSpecial($heading6);
+@include levelHeadingSpecial($heading7);
+@include levelHeadingSpecial($heading8);
+@include levelHeadingSpecial($heading9);
+@include levelHeadingSpecial($heading10);
+
+
+// exercise 3
+$weekdays: "monday" red, "tuesday" rgb(111, 207, 239), "wednesday" yellow, "thursday" green, "friday" orange, "saturday" purple, "sunday" white;
+
+@each $item in $weekdays {
+
+  .area-#{nth($item,1)} {
+
+    border: 5px solid unquote(nth($item, 1));
+
+    position: relative;
+
+    top: 10px;
+
+    background-color: nth($item, 2);
+
+    display: inline-block;
+
+  }
+
+}
+
+// exercise 4
+$weights: 100 200 300 400 500 550 600 700 800 900;
+.specialWeights {
+    background-color: aliceblue;
+    margin-top: 30px;
+    width: 300px;
+    @for $index from 1 through length($weights) {
+      .h-#{$index} {
+        display: inline-block;
+        font-weight: nth($weights, $index);
+      }
+    }
+}  
+
+// exercise 5
+$teamColours: (
+  purdue: rgb(191, 185, 61) rgb(85, 85, 85),
+  illinois: rgb(255, 149, 79) rgb(104, 122, 255),
+  nebraska: rgb(226, 22, 22) rgb(255, 255, 255),
+  northwestern: rgb(126, 20, 255) rgb(255, 255, 255),
+);
+@each $key, $value in $teamColours {
+    .team_#{$key} {
+      color: nth($value, 1);
+      background-color: nth($value, 2);
+    }
+  }
+
+//   exercise 6
+
+$seasonColours: (
+  spring: rgb(184, 198, 105) rgb(150, 50, 50),
+  summer: rgb(28, 192, 28) rgb(86, 8, 8),
+  autumn: rgb(242, 196, 147) rgb(100, 100, 100),
+  winter: rgb(230, 219, 219) rgb(57, 59, 59),
+);
+
+@mixin btn($fontSize, $btnWidth, $bkgColour, $btnName){
+    @each $key, $value in $seasonColours {
+        .season_#{$key} {
+          color: nth($value, 1);
+          background-color: nth($value, 2);
+        }
+    }
+    @mixin signage($season, $colours){
+        .area-#{$season} {
+        @if ($season=="oval") {
+        border-radius: 50%;
+        } @else {
+          border-radius: 10%;
+        }
+        color:nth($colours, 1);
+        background-color: nth($colours, 2);
+        text-align:center;
+      }
+      
+      }
+}

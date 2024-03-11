@@ -1,0 +1,168 @@
+.btn-important {
+  font-size: 120%;
+  width: 100px;
+  background-color: red;
+  border-radius: 15px;
+}
+
+.heading6 {
+  font-size: 100%;
+}
+
+.heading7 {
+  font-size: 110%;
+}
+
+.heading8 {
+  font-size: 120%;
+}
+
+.heading9 {
+  font-size: 130%;
+}
+
+.heading10 {
+  font-size: 140%;
+}
+
+.area-monday {
+  border: 5px solid monday;
+  position: relative;
+  top: 10px;
+  background-color: red;
+  display: inline-block;
+}
+
+.area-tuesday {
+  border: 5px solid tuesday;
+  position: relative;
+  top: 10px;
+  background-color: rgb(111, 207, 239);
+  display: inline-block;
+}
+
+.area-wednesday {
+  border: 5px solid wednesday;
+  position: relative;
+  top: 10px;
+  background-color: yellow;
+  display: inline-block;
+}
+
+.area-thursday {
+  border: 5px solid thursday;
+  position: relative;
+  top: 10px;
+  background-color: green;
+  display: inline-block;
+}
+
+.area-friday {
+  border: 5px solid friday;
+  position: relative;
+  top: 10px;
+  background-color: orange;
+  display: inline-block;
+}
+
+.area-saturday {
+  border: 5px solid saturday;
+  position: relative;
+  top: 10px;
+  background-color: purple;
+  display: inline-block;
+}
+
+.area-sunday {
+  border: 5px solid sunday;
+  position: relative;
+  top: 10px;
+  background-color: white;
+  display: inline-block;
+}
+
+.specialWeights {
+  background-color: aliceblue;
+  margin-top: 30px;
+  width: 300px;
+}
+.specialWeights .h-1 {
+  display: inline-block;
+  font-weight: 100;
+}
+.specialWeights .h-2 {
+  display: inline-block;
+  font-weight: 200;
+}
+.specialWeights .h-3 {
+  display: inline-block;
+  font-weight: 300;
+}
+.specialWeights .h-4 {
+  display: inline-block;
+  font-weight: 400;
+}
+.specialWeights .h-5 {
+  display: inline-block;
+  font-weight: 500;
+}
+.specialWeights .h-6 {
+  display: inline-block;
+  font-weight: 550;
+}
+.specialWeights .h-7 {
+  display: inline-block;
+  font-weight: 600;
+}
+.specialWeights .h-8 {
+  display: inline-block;
+  font-weight: 700;
+}
+.specialWeights .h-9 {
+  display: inline-block;
+  font-weight: 800;
+}
+.specialWeights .h-10 {
+  display: inline-block;
+  font-weight: 900;
+}
+
+.team_purdue {
+  color: rgb(191, 185, 61);
+  background-color: rgb(85, 85, 85);
+}
+
+.team_illinois {
+  color: rgb(255, 149, 79);
+  background-color: rgb(104, 122, 255);
+}
+
+.team_nebraska {
+  color: rgb(226, 22, 22);
+  background-color: rgb(255, 255, 255);
+}
+
+.team_northwestern {
+  color: rgb(126, 20, 255);
+  background-color: rgb(255, 255, 255);
+}
+
+.season_spring {
+  color: rgb(184, 198, 105);
+  background-color: rgb(150, 50, 50);
+}
+
+.season_summer {
+  color: rgb(28, 192, 28);
+  background-color: rgb(86, 8, 8);
+}
+
+.season_autumn {
+  color: rgb(242, 196, 147);
+  background-color: rgb(100, 100, 100);
+}
+
+.season_winter {
+  color: rgb(230, 219, 219);
+  background-color: rgb(57, 59, 59);
+}/*# sourceMappingURL=style.css.map */
